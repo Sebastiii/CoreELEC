@@ -2,8 +2,8 @@
 # Copyright (C) 2016-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="ffmpegx"
-PKG_VERSION="6.0.1"
-PKG_SHA256="9b16b8731d78e596b4be0d720428ca42df642bb2d78342881ff7f5bc29fc9623"
+PKG_VERSION="7.1.1"
+PKG_SHA256="733984395e0dbbe5c046abda2dc49a5544e7e0e1e2366bba849222ae9e3a03b1"
 PKG_LICENSE="GPL-3.0-only"
 PKG_SITE="https://ffmpeg.org"
 PKG_URL="https://ffmpeg.org/releases/ffmpeg-${PKG_VERSION}.tar.xz"
@@ -35,7 +35,7 @@ pre_configure_target() {
   cd ${PKG_BUILD}
   rm -rf .${TARGET_NAME}
 
-# HW encoders
+  # HW encoders
 
   # Generic
   if [[ "${TARGET_ARCH}" = "x86_64" ]]; then
@@ -69,7 +69,7 @@ pre_configure_target() {
     --enable-encoder=libx265"
   fi
 
-# Encoders
+  # Encoders
     PKG_FFMPEG_ENCODERS="\
     `#Video encoders` \
     --enable-libvpx \
@@ -91,7 +91,7 @@ pre_configure_target() {
     --enable-libvorbis \
     --enable-encoder=libvorbis"
 
-# X11 grab for screen recording
+  # X11 grab for screen recording
   if [ "${DISPLAYSERVER}" = "x11" ]; then
     PKG_FFMPEG_LIBS+=" -lX11"
     PKG_FFMPEG_X11_GRAB="\
@@ -165,6 +165,6 @@ configure_target() {
     --enable-libxml2 \
     \
     `#Advanced options` \
-    --disable-hardcoded-tables \
+    --disable-hardcoded-tables
 
 }
