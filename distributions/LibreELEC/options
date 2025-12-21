@@ -6,6 +6,9 @@
 # short project description
   DESCRIPTION="LibreELEC is a fast and user-friendly Kodi Entertainment Center distribution."
 
+BUILDER_NAME="avdvplus"
+ORIGIN_URL="https://github.com/avdvplus/CoreELEC"
+BUG_REPORT_URL="https://github.com/avdvplus/CoreELEC"
 
 ### USER INTERFACE SETTINGS ###
 

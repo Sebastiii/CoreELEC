@@ -10,7 +10,7 @@ show_config() {
   if [ "${OFFICIAL}" = "yes" ]; then
     config_message+="(official)"
   else
-    config_message+="(community)"
+    config_message+="(avdvplus)"
   fi
   config_message+="\n ${dashes}${dashes}${dashes}"
 
