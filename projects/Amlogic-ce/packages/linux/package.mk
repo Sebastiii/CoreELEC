@@ -17,8 +17,8 @@ PKG_PATCH_DIRS="$LINUX"
 
 case "$LINUX" in
   amlogic-4.9)
-    #PKG_VERSION="72b5450399876866ae6ef33e8b73aff02075fd72"
-    #PKG_SHA256="f0c586667e0f8ca2abba73b91fe4aa43fab3b48aabe7ec07bff897e4538bb4eb"
+    #PKG_VERSION="b3b65388cf64fe6c7d00e796751be61e6e9e2753"
+    #PKG_SHA256="e494a4459f80d793619b7b2b82ff2be38dceca8f5f6aa3e02e03065cf944802f"
     #PKG_URL="https://github.com/avdvplus/linux-amlogic/archive/$PKG_VERSION.tar.gz"
     PKG_URL="https://github.com/Sebastiii/linux-amlogic/archive/refs/heads/amlogic-4.9-20-cpm.tar.gz"
     PKG_SOURCE_NAME="linux-$LINUX-$PKG_VERSION.tar.gz"
